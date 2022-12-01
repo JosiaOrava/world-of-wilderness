@@ -14,6 +14,7 @@ When you open the page you are presented with empty map. You can then click on t
 * Mice -> Shows different mammals around the world
 <br>
 After that it starts to load markers on map and when you click marker it shows picture of the animal and on the rightside panel it shows its name, coordinates of the sighting and little info about the animal. <br>
+
 ## Link to page
 The page is hosted on our school servers
 http://users.metropolia.fi/~josiao/World-of-wilderness/
