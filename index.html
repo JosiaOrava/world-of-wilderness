@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head xmlns="http://www.w3.org/1999/xhtml">
+    <title>World of Wilderness</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <link crossorigin="" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+          integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+          rel="stylesheet"/>
+    <script crossorigin=""
+            integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+            src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" defer></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/birds.js"></script>
+    <script defer src="js/animals.js"></script>
+    <script defer src="js/console.js"></script>
+    <script defer src="js/countries.js"></script>
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/images.js"></script>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script defer src="js/jqueryInit.js"></script>
+</head>
+<body>
+<div id="dialog">
+    <div id="dialogContainer">
+        <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/1635/medium.jpg" alt="Giraffa" id="previewImage">
+    </div>
+</div>
+<div id="dialogBirds">
+    <div id="dialogBirdsContainer">
+        <div id="satellite">
+            <a href="javascript:showSatellite()" id="satelliteLink">Satellite data</a>
+        </div>
+        <div id="countrySelector">
+            <label for="birdsMenu">Choose a country:</label>
+            <select name="bird" id="birdsMenu"></select>
+        </div>
+    </div>
+</div>
+<div class="body_content">
+    <div class="page">
+        <div id="imageContainer" class="image-container">
+            <div id="images">
+                <img src="img/nature/forestpath.jpg" id="imageSource">
+            </div>
+        </div>
+        <div class="pageContent">
+            <div class="nav_menu">
+                <div class="pageHeader">
+                    <img alt="head" src="img/style/header.png">
+                </div>
+                <div id="loader-container" class="hidden">
+                    <div class="loader" id="spinner"></div>
+                </div>
+                <div id="main-menu" class="main-menu">
+                    <button title="Find Whales" id="whalesButton"><img class="buttonImage" alt="orca" src="img/icons/orca-icon.png"></button>
+
+                    <button title="Find Birds" id="birdsButton"><img class="buttonImage" alt="osprey" src="img/icons/osprey-icon.png"></button>
+
+                    <button title="Find Mammals" id="animalsButton"><img class="buttonImage" alt="fox" src="img/icons/fox-icon.png"></button>
+
+                    <button title="About Us" id="personButton"><img class="buttonImage" alt="person" src="img/icons/person.png"></button>
+
+                    <button title="home" id="homeButton"><img class="buttonImage" alt="home-icon" src="img/icons/home.png"></button>
+                </div>
+            </div>
+            <div id="map"></div>
+            <iframe id="satelliteContainer" class="satelliteContainer hidden"
+                    src="https://satelliitti.laji.fi/?lang=en&idiframe=true">
+            </iframe>
+            <div id="aboutContainer" class="hidden">
+                <div class="aboutUsImgs">
+                    <div class="article">
+                        <img alt="josia" src="img/us/josia.png">
+                        <br>
+                        <b>Josia Orava</b>
+                        <p>Josia is 20-years old engineer student at Metropolia living in Vantaa. In free time he likes to code hes own projects but other non coding hobbies include playing piano and electric guitar. In future he would like to work abroad to gather new expiriences and travel the world.</p>
+                    </div>
+                    <div class="article">
+                        <img alt="johanna" src="img/us/johanna.png">
+                        <br>
+                        <b>Johanna Toivanen</b>
+                        <p>Johanna is 30 years old student from Espoo. She is aiming as a full stack developer and is planning to have a career in the US. She likes gaming, digital arts and programming. Her favourite thing besides programming is playing piano. Johanna has a cat called Michael. Her favourite food is sushi.</p>
+                    </div>
+                    <div class="article">
+                        <img alt="valtteri" src="img/us/valtteri.png">
+                        <br>
+                        <b>Valtteri Niininen</b>
+                        <p>Valtteri is an aspiring software developer from Vantaa. He enjoys gaming, music and spending time in the great outdoors. He has a love-hate relationship with programming, but with enough caffeine anything is possible. His favourite color is red. He is also an amazing actor.</p>
+                    </div>
+                </div>
+                <iframe class="wowVideo" width="530" height="285" src="https://www.youtube.com/embed/i0xFVITG9II" title="World of Wilderness" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="consoleContainer" class="console-container">
+            <textarea rows="31" readonly id="console"></textarea>
+            <button id="clear" onclick="clearConsole()">Clear console</button>
+    </div>
+</div>
+</div>
+</body>
+</html>
