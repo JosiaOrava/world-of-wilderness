@@ -15,6 +15,10 @@ When you open the page you are presented with empty map. You can then click on t
 <br>
 After that it starts to load markers on map and when you click marker it shows picture of the animal and on the rightside panel it shows its name, coordinates of the sighting and little info about the animal. <br>
 
+#### Other icons
+* Person icon -> shows you our team and little trailer video we created for the website.
+* Home icon -> resets the map
+
 ## Link to page
 The page is hosted on our school servers
 http://users.metropolia.fi/~josiao/World-of-wilderness/
