@@ -1,4 +1,5 @@
 # world-of-wilderness
+![alt text](https://github.com/JosiaOrava/world-of-wilderness/tree/main/img/readme/wow.png)
 This was final project in first year done by me, Johanna Toivanen and Valtteri Niininen.
 <br> It uses 5 API:s which are: <br>
 * eBird (Birds) <br>
