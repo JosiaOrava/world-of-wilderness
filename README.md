@@ -1,5 +1,5 @@
 # world-of-wilderness
-<img src="https://github.com/JosiaOrava/world-of-wilderness/blob/main/img/readme/wow.PNG" alt="image of project" style="width:800px;"/>
+![picture of project](https://github.com/JosiaOrava/world-of-wilderness/blob/main/img/readme/wow.PNG)
 This was final project in first year done by me, Johanna Toivanen and Valtteri Niininen.
 <br> It uses 5 API:s which are: <br>
 * eBird (Birds) <br>
